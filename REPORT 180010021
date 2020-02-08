@@ -1,0 +1,45 @@
+										COMPUTER NETWORKS
+	ROLL NO.-: 180010021																			LAB-:1
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+										WARMUP QUESTIONS
+
+2.1	Hostname = HP by using (hostname) and Host IP address = 10.196.4.219 by using (hostname -I)
+2.2	We get our next hop IP address by using traceroute(next hop router's IP address = 10.196.3.250 ) and MAC address by using (arp -a IP address) (MAC address = 02:04:96:9a:82:e8)
+2.3	127.0.0.53 is Local DNS server's IP address by using cat /etc/resolv.conf
+2.4	in file /etc/protocols numbers represent protocol number
+2.5	port number of ftp = 21,ssh = 22,nfs =2049 and smtp = 25 by using grep -E 'ssh|ftp|nfs|smtp' /etc/services																
+2.6	Screen shot attached
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+										QUESTIONS
+
+3.1.a	 when their is failure 100% packet loss and and 0 packets received and in success 0% packet loss and amount of packet received is equal to packet transmitted
+3.1.b	 because it is round trip time that is time taken for packet sent and plus received and their is less traffic that why we get our rtt values rtt min/avg/max/mdev = 25.366/88.167/241.034/70.824 ms
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.2.a	We can see each hop ip address and and as it send three pacekts so their rtl time in respective columns and network latency
+3.2.b	By writing command (traceroute -m X www.ggogle.com) where X is maximum number of hops
+3.2.c	These three timestaps signiufies the rtt time of three packets as it sends three packets
+3.2.d	If the TTL in ICMP packet is 0 then packet is discarded and ICMP time exceeded in transit messsage is sent to source address otherwise packet is accepted.If any packet goes in hop's loop then to prevent it from forward moving it uses TTL in ICMP.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.3.a	Hostname = HP by using cat /etc/hostname and Host IP address by using (cat /etc/hosts)
+3.3.b	We get our next hop IP address by using traceroute(next hop router's IP address = 10.196.3.250 ) and MAC address by using (arp -a IP address) (MAC address = 02:04:96:9a:82:e8)
+3.3.c	127.0.0.53 is Local DNS server's IP address by using cat/etc/resolv.conf
+3.3.d	in file /etc/protocols numbers represent protocol number
+3.3.e	port number of ftp = 21,ssh = 22,nfs =111 and smtp = 25 by using grep -E 'ssh|ftp|nfs|smtp' /etc/services
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.4.a	finished and screenshots
+3.4.b	Black identifies the packets with problems due to traffic problem or any other
+3.4.c	ip.src == [source IP] && http
+3.4.d	UDP stream is preffered for DNS because it is fast and has low overhead.A DNS query is a single UDP request from the DNS client followed by a single UDP reply from the server. When a host request 		a webpage, transmission reliability and completeness must be guaranteed. Therefore, HTTP uses TCP as its transport layer protocol.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
